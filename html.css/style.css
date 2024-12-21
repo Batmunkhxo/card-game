@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(71, 113, 149);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+.card.flipped {
+    background-color: aliceblue;
+    cursor: default;
+}
+.hidden {
+    visibility: hidden
+   ;
+}
